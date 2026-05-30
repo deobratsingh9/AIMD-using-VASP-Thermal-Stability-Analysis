@@ -1,0 +1,29 @@
+# General settings
+PREC     = Accurate
+ENCUT    = 500              # Plane-wave cutoff
+ISMEAR   = 0                # Gaussian smearing
+SIGMA    = 0.05             # Smearing width for insulators/semiconductors
+
+# Molecular Dynamics settings
+IBRION   = 0                # MD mode
+NSW      = 5000             # Number of MD steps
+POTIM    = 1.0              # Time step (fs)
+TEBEG    = 300              # Start temperature (K)
+
+# Thermostat: Nosé–Hoover chain
+MDALGO   = 2                # NVT with Nosé–Hoover chain
+SMASS    = 0              # Thermostat mass (coupling strength)
+
+# Stress calculation (optional)
+ISIF     = 2                # Relaxation/stress — no relaxation here, but force calc
+
+# Electronic relaxation
+EDIFF    = 1E-5             # SCF convergence
+NELM     = 60               # Max electronic steps per MD step
+LREAL    = Auto             # Real-space projection (auto optimize)
+
+# Output
+LWAVE    = .FALSE.          # Don't write WAVECAR
+LCHARG   = .FALSE.          # Don't write CHGCAR
+NBLOCK   = 10               # Control MD output frequency
+KBLOCK   = 10
