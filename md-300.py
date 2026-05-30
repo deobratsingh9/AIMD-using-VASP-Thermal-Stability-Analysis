@@ -6,7 +6,7 @@ import re
 filename = "OSZICAR"
 dt_fs = 1.0
 dpi_value = 600
-xmax = 2854   # ✅ force x-axis range 0 → 2854 fs
+xmax = 2854   # force x-axis range 0 → 2854 fs
 end_step = None   # optional: limit data (e.g., 3000). Keep None for full
 # --------------------------------
 
